@@ -2,9 +2,24 @@
 
 -- Find all customers with postal code 1010
 
+select *
+from customers
+where postalCode = 1010
+limit 3;
+
 -- Find the phone number for the supplier with the id 11
 
+select phone
+from suppliers
+where phone = '(010) 9984510';
+
 -- List first 10 orders placed, sorted descending by the order date
+
+select *
+from orders
+where orderDate <= '1997-02-12'
+order by orderDate desc
+limit 10
 
 -- Find all customers that live in London, Madrid, or Brazil
 
